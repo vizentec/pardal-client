@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConsumerService {
 
-	@Value("${parda.client.diretorio-xml}")
+	@Value("${pardal.client.diretorio:/tmp/pardal_client/}")
 	private String filePath;
 
 	@JmsListener(destination="${pardal.autenticator.topic}", containerFactory="jmsListenerContainerFactory")
