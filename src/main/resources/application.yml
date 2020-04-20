@@ -1,0 +1,18 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    client-id: client_id_do_topico_permitido
+    consumer:      group-id: group_id_do_topico_permitido
+    producer:
+      client-id: client_id_do_topico_permitido
+      max:
+        request:
+          size: 231072000
+      batch-size: 60000000
+      buffer-memory: 60000000
+
+pardal:
+  client:
+    topic-name: nome_do_topico_de_consumo
+    consumer-username: username_do_kafka
+    consumer-password: password_do_kafka
